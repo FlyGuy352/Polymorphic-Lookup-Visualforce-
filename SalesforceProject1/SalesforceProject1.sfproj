@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{e39797d3-accc-4b4b-8da2-c433486b62df}</ProjectGuid>
+    <Login>tom.lin@aodigy.com.aramcellcase</Login>
+    <Password>6HPN8095Eyom2t/UN+nYhInA5WJbFa8Y5DxsOZoXw79xLMrdGyYIMxqcxHgtJnTm</Password>
+    <SecurityToken>qZ/9viInV261vCgDY2AE2qrcq3Id47RQZukWuc++Feb1zGd65AYzEpf4b0TEiPB2oeDLR2FXzmU58ubKtPlmmg==</SecurityToken>
+    <Domain>test</Domain>
+    <Environment>1</Environment>
+    <ApexVersion>42.0</ApexVersion>
+    <Name>SalesforceProject1</Name>
+    <AssemblyName>SalesforceProject1</AssemblyName>
+    <RootNamespace>SalesforceProject1</RootNamespace>
+    <ProjectVersion>5</ProjectVersion>
+    <PackageVersion>1.19.9.4</PackageVersion>
+    <SyncOption>False</SyncOption>
+    <AntSupport>True</AntSupport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <ItemGroup>
+    <Folder Include="AnonymousApex" />
+    <Folder Include="classes\" />
+    <Folder Include="pages\" />
+    <Folder Include="Soql" />
+    <Folder Include="triggers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="classes\CaseRelatedProjectsLookupCnt.cls">
+      <PhysicalRelativePath>src\classes\CaseRelatedProjectsLookupCnt.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+      <Id>01p5D000000FOXaQAO</Id>
+      <LastModifiedDateUtcTicks>131725826730000000</LastModifiedDateUtcTicks>
+      <Hash>YhMMYVSYcEjkKDuKerrMnw==</Hash>
+    </Compile>
+    <Compile Include="classes\CaseTriggerHandler.cls">
+      <PhysicalRelativePath>src\classes\CaseTriggerHandler.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+      <Id>01p5D000000F8woQAC</Id>
+      <LastModifiedDateUtcTicks>131725106360000000</LastModifiedDateUtcTicks>
+      <Hash>Po5p/LCNCIreB9oggaWxMA==</Hash>
+    </Compile>
+    <Compile Include="classes\CaseTriggerHandlerTest.cls">
+      <PhysicalRelativePath>src\classes\CaseTriggerHandlerTest.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+      <Id>01p5D000000FNUBQA4</Id>
+      <LastModifiedDateUtcTicks>131725535520000000</LastModifiedDateUtcTicks>
+      <Hash>whzOsl7XgzeWdsCkOSTbJg==</Hash>
+    </Compile>
+    <Compile Include="classes\TriggerHandler.cls">
+      <PhysicalRelativePath>src\classes\TriggerHandler.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+      <Id>01p90000006acBeAAI</Id>
+      <LastModifiedDateUtcTicks>131056376100000000</LastModifiedDateUtcTicks>
+      <Hash>Yh4b+YSI6JQtOM9QVNvFXA==</Hash>
+    </Compile>
+    <Compile Include="classes\TriggerHandler_Test.cls">
+      <PhysicalRelativePath>src\classes\TriggerHandler_Test.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+      <Id>01p90000006acBfAAI</Id>
+      <LastModifiedDateUtcTicks>131056376100000000</LastModifiedDateUtcTicks>
+      <Hash>p76SzT/gXsqdoyVnXSFlug==</Hash>
+    </Compile>
+    <Compile Include="pages\CaseRelatedProjectLookUp.page">
+      <PhysicalRelativePath>src\pages\CaseRelatedProjectLookUp.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+      <Id>0665D0000008vg2QAA</Id>
+      <LastModifiedDateUtcTicks>131725826970000000</LastModifiedDateUtcTicks>
+      <Hash>mTYQiMkl05g1YHlWDVShng==</Hash>
+    </Compile>
+    <Compile Include="triggers\CaseTrigger.trigger">
+      <PhysicalRelativePath>src\triggers\CaseTrigger.trigger</PhysicalRelativePath>
+      <SubType>Trigger</SubType>
+      <Id>01q5D000000CoaIQAS</Id>
+      <LastModifiedDateUtcTicks>131725106490000000</LastModifiedDateUtcTicks>
+      <Hash>zDp75OB+Fzy65AcIOJ7yyg==</Hash>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="classes\CaseRelatedProjectsLookupCnt.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\CaseRelatedProjectsLookupCnt.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131725826730000000</LastModifiedDateUtcTicks>
+      <Hash>Zq3gQSxTZehdIucyITjunw==</Hash>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>classes\CaseRelatedProjectsLookupCnt.cls</DependentUpon>
+    </None>
+    <None Include="classes\CaseTriggerHandler.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\CaseTriggerHandler.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131725106360000000</LastModifiedDateUtcTicks>
+      <Hash>Zq3gQSxTZehdIucyITjunw==</Hash>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>classes\CaseTriggerHandler.cls</DependentUpon>
+    </None>
+    <None Include="classes\CaseTriggerHandlerTest.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\CaseTriggerHandlerTest.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131725535520000000</LastModifiedDateUtcTicks>
+      <Hash>Zq3gQSxTZehdIucyITjunw==</Hash>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>classes\CaseTriggerHandlerTest.cls</DependentUpon>
+    </None>
+    <None Include="classes\TriggerHandler.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\TriggerHandler.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131056376100000000</LastModifiedDateUtcTicks>
+      <Hash>TuLywk7fcHal6tl71+9MzQ==</Hash>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>classes\TriggerHandler.cls</DependentUpon>
+    </None>
+    <None Include="classes\TriggerHandler_Test.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\TriggerHandler_Test.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131056376100000000</LastModifiedDateUtcTicks>
+      <Hash>TuLywk7fcHal6tl71+9MzQ==</Hash>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>classes\TriggerHandler_Test.cls</DependentUpon>
+    </None>
+    <None Include="pages\CaseRelatedProjectLookUp.page-meta.xml">
+      <PhysicalRelativePath>src\pages\CaseRelatedProjectLookUp.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131725826970000000</LastModifiedDateUtcTicks>
+      <Hash>/qak4Vwn1oRgaJPvEtVkmA==</Hash>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>pages\CaseRelatedProjectLookUp.page</DependentUpon>
+    </None>
+    <None Include="triggers\CaseTrigger.trigger-meta.xml">
+      <PhysicalRelativePath>src\triggers\CaseTrigger.trigger-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131725106490000000</LastModifiedDateUtcTicks>
+      <Hash>85cQFuT3RFzZsWGAg4BvPQ==</Hash>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>triggers\CaseTrigger.trigger</DependentUpon>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Build.targets" />
+</Project>

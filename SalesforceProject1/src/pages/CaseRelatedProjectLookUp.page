@@ -1,0 +1,21 @@
+<apex:page StandardController="Case" standardStylesheets="false" extensions="CaseRelatedProjectsLookupCnt" lightningStyleSheets="true">
+    <apex:form >
+        <apex:panelGrid columns="3">
+            <apex:outputLabel value="Related Project:" id="label"/>
+            <apex:selectList value="{!Projects}" size="1">
+                <apex:actionsupport event="onchange" reRender="CaseRelatedProject"/>
+                <apex:selectOptions value="{!CaseRelatedProjects}"/>
+            </apex:selectList>
+            <apex:outputPanel id="CaseRelatedProject">
+                <apex:inputField value="{!Case.ArmaGel_Opportunity__c}" rendered="{!(Projects == "ArmaGel Opportunities")}"/>
+                <apex:inputField value="{!Case.Project__c}" rendered="{!(Projects == "Opportunities")}"/>
+                <apex:inputField value="{!Case.PET_OEM_Opportunity__c}" rendered="{!(Projects == "PET OEM Opportunities")}"/>
+                <apex:inputField value="{!Case.PET_OEM_Project__c}" rendered="{!(Projects == "PET OEM Projects")}"/>                
+                <apex:inputField value="{!Case.PET_Opportunity__c}" rendered="{!(Projects == "PET Opportunities")}"/>
+                <apex:inputField value="{!Case.Sub_Project__c}" rendered="{!(Projects == "Sub Projects")}"/>                
+            </apex:outputPanel>
+        </apex:panelGrid>
+        <apex:commandButton action="{!classicSave}" value="Save" rendered="{!$User.UIThemeDisplayed == 'Theme3'}"/>
+        <apex:commandButton action="{!save}" value="Save" rendered="{!$User.UIThemeDisplayed != 'Theme3'}"/>        
+    </apex:form>
+</apex:page>
